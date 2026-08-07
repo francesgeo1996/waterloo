@@ -13,4 +13,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Welcome to CI/CD
-        run: echo "Welcome to CI/CD"
+        run: |
+          echo "Welcome to CI/CD"
+          echo "I welcome you all"
+          echo "To this wonderful cohort"
