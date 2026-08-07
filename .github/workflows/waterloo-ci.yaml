@@ -1,0 +1,12 @@
+name: Waterloo CI
+
+ on:
+   push:
+     branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+    steps:
+	   - uses: actions/ checkout@v4
+	   - name: Say Hello to March Cohort 
+       run: echo “Welcome everyone to waterloo cohort”
