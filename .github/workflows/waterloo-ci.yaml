@@ -2,13 +2,15 @@ name: Waterloo CI
 
 on:
   push:
-     branches:
-	 - main	 
-	 
+    branches:
+      - main
+
 jobs:
   build:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
+
     steps:
-	   - uses: actions/ checkout@v4
-	   - name: Say Hello to March Cohort 
-       run: echo “Welcome everyone to waterloo cohort”
+      - uses: actions/checkout@v4
+
+      - name: Welcome to CI/CD
+        run: echo "Welcome to CI/CD"
